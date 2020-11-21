@@ -56,4 +56,4 @@ Incoming
 ## License
 
 Apache 2.0.
-See the [license] for more information.
+See the [license](LICENSE) for more information.
