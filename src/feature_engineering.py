@@ -98,6 +98,8 @@ def partition_data(df):
     for kw in partition_2_keywords:
         partition_2_columns.extend([c for c in df.columns if kw in c])
 
-    partition_3_columns = list(set(df.columns) - set(partition_1_columns) - set(partition_2_columns))
+    partition_3_columns = list(
+        set(df.columns) - set(partition_1_columns) - set(partition_2_columns)
+    )
 
     return df[partition_1_columns], df[partition_2_columns], df[partition_3_columns]
